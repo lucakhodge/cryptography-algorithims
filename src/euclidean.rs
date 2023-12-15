@@ -40,7 +40,7 @@ pub fn extended_euclidean_algorithim(a : i128, b : i128) -> (i128,i128,i128) {
     // let mut old_copies_b = 0;
     while card_b.0 != 0 {
         let number_of_copies = card_a.0 / card_b.0;
-        println!("{:?} {:?} {:?}", card_a, card_b, number_of_copies);
+        // println!("{:?} {:?} {:?}", card_a, card_b, number_of_copies);
         (card_a, card_b) = (card_b, (card_a.0 - number_of_copies * card_b.0, card_a.1 - number_of_copies * card_b.1, card_a.2 - number_of_copies * card_b.2));
     }
     card_a

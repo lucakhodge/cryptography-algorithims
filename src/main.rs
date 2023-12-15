@@ -1,9 +1,9 @@
 mod euclidean;
 mod chinese;
-use euclidean::euclidean_algorithim;
+mod cli;
 
 fn main() {
-    println!("Hello, world!");
+    cli::use_menu();
 }
 
 

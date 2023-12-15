@@ -23,6 +23,7 @@ pub fn chinese_remainder_list (list : Vec<(i128, i128)>) -> (i128, i128) {
     let mut acc = list[0];
     for i in 1..list.len() {
         acc = chinese_remainder_two(acc, list[i]);
+        // println!("{:?}", acc);
     }
     acc
 }
